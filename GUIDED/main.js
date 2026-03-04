@@ -14,3 +14,14 @@ if (input < 0){
 
 let apakahGenap = absoultValue(145);
 console.log(apakahGenap);
+
+let nama = "Marta";
+console.log(`Helo, nama`);
+
+const user = {
+    firstName: "Marta",
+    lastName: "Safitri",
+    age: 19
+};
+
+console.log(user["age"]);
