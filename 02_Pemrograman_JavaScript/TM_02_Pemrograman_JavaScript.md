@@ -12,4 +12,5 @@ Program ini membuat fungsi bernama **fizzBuzz** yang menerima input berupa array
 
 **Output**
 
-![alt text](output TM KPL_week2.png)
+
+![alt text](output_TM_KPL_week2.png)
