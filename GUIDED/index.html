@@ -1,0 +1,52 @@
+<!--
+1. Elemen-elemen diluar contoh dibawah ini
+2. Memasukkan berkas JS ke dlm html
+3. penjelasan elemen yang kamu temukan dan apakah ada semantiknya atau tidak
+Jawaban no 3: 
+elemen" semantik yang saya temukan yaitu:
+<body> , <h1>, <p>, <label>, <textarea>, <button>, <title>, <link>, <script>
+elemen" non semantik yang saya temukan yaitu:
+<div>, <span>
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengkonversi Teks</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<!-- JUDUL HALAMAN -->
+<h1>Pengkonversi Gaya Teks</h1>
+
+<!-- DESKRIPSI -->
+<p>Alat ini bisa mengubah teks menjadi huruf besar, huruf kecil, dan paragraf.</p>
+
+<!-- LABEL buat textarea -->
+<label for="editor-kecil">Masukkan teks:</label>
+
+<!-- TEMPAT INPUT TEKS (textarea dengan ID "editor-kecil" yang dipake di JS) -->
+<textarea class="kotak-input" id="editor-kecil" rows="10" cols="60" placeholder="Kata-kata..."></textarea>
+
+<!-- TEMPAT HASIL HITUNGAN (span dengan ID yang dipake di JS) -->
+<p>
+Huruf: <span id="hf">0</span>,
+huruf besar: <span id="hb">0</span>,
+huruf kecil: <span id="hk">0</span>
+</p>
+
+<!-- TOMBOL-Tombol dengan ID yang dipake di JS -->
+<div>
+<button id="huruf-besar">Besarkan</button>
+<button id="huruf-kecil">Kecilkan</button>
+<button id="huruf-paragraf">Paragrafkan</button>
+</div>
+
+<!-- LINK KE FILE JAVASCRIPT -->
+<script src="index.js"></script>
+
+</body>
+</html>

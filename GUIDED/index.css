@@ -1,0 +1,58 @@
+/*
+1. preseden css
+2. media query
+3. jenis-jenis selektor dan penjelasan
+Jawab:
+1. Inline style (style="..." di HTML)
+ID selector (#id)
+Class selector (.class)
+[attribute], :pseudo-class 
+Element selector (p, h1, div)
+Universal selector (*)
+contoh dari kaode saya:
+//* { }  /* Prioritas 5 (paling lemah) */
+/* p { }*/  /* Prioritas 4 */
+/*kotak-input { } */  /* Prioritas 3 */
+/*#hf { }*/  /* Prioritas 2 (kalau ada ID) 
+2.@media screen and (max-width: 500px) {
+    p > span {
+        color: chartreuse;
+    }
+}
+3. Selektor Universal,contoh: *, {} ini memilih semua elemen
+selektor element/type, contoh: body{}, button{} ini untuk memilih elemen berdasarkan nama tag
+selektor class, contoh: .kotak-input{} ini untuk memilih elemen dengan class="kotak-input"
+selektor descendant, contoh: p span {} ini untuk memilih <span> yang ada di dalam <p>
+selektor child, contoh p > span {} ini untuk memilih <span> yang jadi anak langsung dari <p>
+*/
+
+*{    /* SELECTOR UNIVERSAL: berlaku buat SEMUA elemen */
+    border: 1px solid black;     /* kasih border hitam di semua elemen */
+    padding: 10px;    /* kasih jarak dalam 10px di semua elemen */
+}
+
+body {    /* SELECTOR ELEMEN: berlaku buat tag <body> */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* atur jenis huruf */
+}
+
+.kotak-input {  /* SELECTOR CLASS: berlaku buat elemen dengan class "kotak-input" */
+    display: block;   /* bikin textarea jadi blok (turun ke bawah) */
+    resize: none;     /* nonaktifin fitur resize textarea */
+}
+
+p > span {   /* SELECTOR CHILD: berlaku buat <span> yang anak LANGSUNG dari <p> */
+    color: coral;   /* warna teks coral */
+    font-weight: bold;    /* teks tebal */
+}
+
+button{     /* SELECTOR ELEMEN: berlaku buat semua <button> */
+    display: block;   /* bikin tombol turun ke bawah (setiap tombol baris baru) */
+}
+
+/* MEDIA QUERY: aturan khusus buat layar yang lebarnya ≤ 500px (HP) */
+@media screen and (max-width: 500px){
+    p > span {    /* saat layar kecil, span dalam p berubah warna */
+        color:chartreuse;   /* dari coral jadi chartreuse (hijau) */
+        font-weight: bold ;
+    }
+}
