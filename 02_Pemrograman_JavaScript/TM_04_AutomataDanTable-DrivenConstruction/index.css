@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* MODE GELAP UTAMA */
+.mode-gelap {
+    background-color: #171b25;
+    color: #ebecf7;
+}
+
+/* editor saat mode gelap */
+.mode-gelap #editor-kecil{
+    background-color: #2e3443;
+    color: #ebecf7;
+}
+
+/* tombol saat mode gelap */
+.mode-gelap button{
+    background-color: #29ddcc;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/* mode sepia */
+.sepia-mode{
+    background-color: #F4ECD8;
+    color: #5B4636;
+}
+
+/* textarea tetap putih */
+.sepia-mode #editor-kecil{
+    background-color: white;
+    color: #5B4636;
+}
