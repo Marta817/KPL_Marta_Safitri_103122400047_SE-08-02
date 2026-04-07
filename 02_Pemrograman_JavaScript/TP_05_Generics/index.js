@@ -1,3 +1,7 @@
+/**
+ * @param {string} str
+ * @param {string} mode
+ */
 function hitung(str, mode) {
 
     let total = 0;
