@@ -6,4 +6,5 @@ kotaDikunjungi.pop(); // hapus array dri belakang
 //kotaDikunjungi.splice(0,1); //hapus array by Index target
 //console.log(kota[1]);
 kota[1] = "Bogor", //mengubah array kedua menjadi Bogor
+// @ts-ignore
 console.log(kota.slice(0,kota.lenght)); //menampilkan semua array

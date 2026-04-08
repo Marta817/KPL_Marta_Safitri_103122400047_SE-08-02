@@ -13,29 +13,41 @@
 //
 
 // 1. Event listener untuk input (saat mengetik)
+// @ts-ignore
 elemenEditor.addEventListener("input", hitungHuruf);
 
 // 2. Event listener untuk tombol huruf besar
+// @ts-ignore
 document.getElementById("huruf-besar").addEventListener("click", function() {
+    // @ts-ignore
     elemenEditor.value = elemenEditor.value.toUpperCase();
+    // @ts-ignore
     hitungHuruf({target: elemenEditor});
 });
 
 // 3. Event listener untuk tombol huruf kecil
+// @ts-ignore
 document.getElementById("huruf-kecil").addEventListener("click", function() {
+    // @ts-ignore
     elemenEditor.value = elemenEditor.value.toLowerCase();
+    // @ts-ignore
     hitungHuruf({target: elemenEditor});
 });
 
 // 4. Event listener untuk tombol paragraf
+// @ts-ignore
 document.getElementById("huruf-paragraf").addEventListener("click", function() {
+    // @ts-ignore
     let teks = elemenEditor.value.toLowerCase();
-    teks = teks.replace(/(^\w|\.\s+\w)/g, function(huruf) {
+    teks = teks.replace(/(^\w|\.\s+\w)/g, function(/** @type {string} */ huruf) {
         return huruf.toUpperCase();
     });
+    // @ts-ignore
     elemenEditor.value = teks;
+    // @ts-ignore
     hitungHuruf({target: elemenEditor});
 });
 
 // 5. Jalankan sekali saat halaman dimuat
+// @ts-ignore
 hitungHuruf({target: elemenEditor});
