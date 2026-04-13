@@ -1,3 +1,6 @@
+/**
+ * @param {string | number | any[]} arr
+ */
 function fizzBuzz(arr) {
 
   if (!Array.isArray(arr)) {

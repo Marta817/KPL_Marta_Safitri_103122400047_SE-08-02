@@ -11,10 +11,13 @@
     "url": "git+https://github.com/Marta817/KPL_Marta_Safitri_103122400047_SE-08-02.git"
   },
   "license": "ISC",
-  "author": "Marta Safitri",  
+  "author": "Marta Safitri",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0"
   }
 }
