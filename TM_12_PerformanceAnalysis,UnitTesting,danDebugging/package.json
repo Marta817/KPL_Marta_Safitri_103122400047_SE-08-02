@@ -1,0 +1,13 @@
+{
+  "name": "tm-12-performance-analysis-unit-testing-and-debugging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hitung.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
