@@ -1,0 +1,55 @@
+/*
+1. Preseden CSS
+2. Media query
+3. Jenis-jenis selektor
+*/
+
+/* ===== Selektor Elemen ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Selektor Class ===== */
+.kotak-input {
+    display: block;
+    resize: none;
+}
+
+/* ===== Selektor Child ===== */
+p > span {
+    color: #f72424;
+    font-weight: bold;
+}
+
+/* ===== Selektor Elemen ===== */
+button {
+    display: inline;
+}
+
+/* ===== Contoh Preseden CSS (Specificity) ===== */
+/* Selektor ID lebih kuat daripada class */
+#hf {
+    color: red;
+}
+
+/* Jika ada aturan lain seperti ini */
+span {
+    color: coral;
+}
+/* maka yang dipakai browser adalah #hf karena specificity lebih tinggi */
+
+
+/* ===== Media Query ===== */
+/* Mengatur tampilan ketika layar kecil (misal HP) */
+@media screen and (max-width: 600px) {
+
+    .kotak-input {
+        width: 100%;
+    }
+
+    button {
+        display: block;
+        margin-top: 5px;
+    }
+
+}

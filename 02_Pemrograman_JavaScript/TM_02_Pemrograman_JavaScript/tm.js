@@ -1,3 +1,4 @@
+// @ts-ignore
 function fizzBuzz(arr) {
 
   if (!Array.isArray(arr)) {

@@ -1,5 +1,6 @@
 const arr1 = [2, 0, 26, 28, -2];
 
+// @ts-ignore
 function mulOfArray(arr) {
     let result = 1;
     for (let i = 0; i < arr.length; i = i + 1) {
